@@ -49,7 +49,7 @@ def _mean_table(rows: list[dict], key: str) -> dict:
 
 @torch.no_grad()
 def enhance_long(model, wav: torch.Tensor, device, chunk_sec: float = 10.0, overlap_sec: float = 1.0) -> torch.Tensor:
-    """Обработка длинной записи кусками с перекрытием и плавной склейкой — экономит память."""
+    """Обработка длинной записи кусками с перекрытием и плавной склейкой - экономит память."""
     wav = wav.float()
     n, chunk, hop = wav.shape[-1], int(chunk_sec * SAMPLE_RATE), int((chunk_sec - overlap_sec) * SAMPLE_RATE)
     if n <= chunk:

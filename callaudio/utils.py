@@ -31,7 +31,7 @@ def load_config(path: str | os.PathLike, overrides: list[str] | None = None) -> 
 
 
 def resolve_placeholders(cfg: dict) -> dict:
-    """Подставляет {data_root} и {runs_root} в строки конфига — пути задаются в одном месте."""
+    """Подставляет {data_root} и {runs_root} в строки конфига - пути задаются в одном месте."""
     roots = {k: str(cfg[k]) for k in ("data_root", "runs_root") if k in cfg}
 
     def walk(node):
@@ -143,7 +143,7 @@ class AverageMeter:
 
 
 def read_manifest(path: str | os.PathLike) -> list[dict]:
-    """Манифест — JSONL: одна строка = одна запись (path, duration, label, text, ...)."""
+    """Манифест - JSONL: одна строка = одна запись (path, duration, label, text, ...)."""
     rows = []
     with open(path, encoding="utf-8") as f:
         for line in f:

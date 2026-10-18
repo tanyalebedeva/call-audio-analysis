@@ -7,7 +7,7 @@
 * кадры 2D-проекции для каждой эпохи и анимацию GIF;
 * график silhouette score по эпохам (считается в исходном пространстве, а не по 2D-картинке);
 * интерактивный HTML последней эпохи (plotly);
-* umap_final.pkl — обученный UMAP для карты эмоций в демо.
+* umap_final.pkl - обученный UMAP для карты эмоций в демо.
 """
 from __future__ import annotations
 
@@ -65,7 +65,7 @@ def visualize_run(run: str | Path, method: str = "umap", every: int = 1, fps: in
     run = Path(run)
     files = sorted((run / "embeddings").glob("epoch_*.npz"))[::every]
     if not files:
-        raise FileNotFoundError(f"Нет эмбеддингов в {run / 'embeddings'} — сначала обучите модель")
+        raise FileNotFoundError(f"Нет эмбеддингов в {run / 'embeddings'} - сначала обучите модель")
     out = run / "viz"
     out.mkdir(exist_ok=True)
 

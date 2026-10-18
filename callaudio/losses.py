@@ -18,7 +18,7 @@ import torch.nn.functional as F
 
 def si_sdr(est: torch.Tensor, ref: torch.Tensor, eps: float = 1e-8) -> torch.Tensor:
     """Scale-invariant SDR в дБ для каждого примера батча: (B, T) -> (B,).
-    Сигналы центрируются, оценка проецируется на эталон — громкость не влияет."""
+    Сигналы центрируются, оценка проецируется на эталон - громкость не влияет."""
     est = est - est.mean(dim=-1, keepdim=True)
     ref = ref - ref.mean(dim=-1, keepdim=True)
     alpha = (est * ref).sum(-1, keepdim=True) / (ref.pow(2).sum(-1, keepdim=True) + eps)
@@ -87,7 +87,7 @@ def build_separation_loss(name: str, **kwargs) -> nn.Module:
 
 class FocalLoss(nn.Module):
     """Focal loss: (1 - p_t)^γ · CE. При γ = 0 совпадает с cross-entropy.
-    Уменьшает вклад лёгких примеров — у нас это обычно нейтральные фразы."""
+    Уменьшает вклад лёгких примеров - у нас это обычно нейтральные фразы."""
 
     def __init__(self, gamma: float = 2.0, weight: torch.Tensor | None = None, label_smoothing: float = 0.0):
         super().__init__()
@@ -143,7 +143,7 @@ def vae_loss(recon: torch.Tensor, target: torch.Tensor, mu: torch.Tensor, logvar
 
 
 def beta_schedule(epoch: int, step_in_epoch: float, beta: float, warmup_epochs: float) -> float:
-    """Линейный разогрев β от 0 до целевого значения (KL annealing) — против коллапса латента."""
+    """Линейный разогрев β от 0 до целевого значения (KL annealing) - против коллапса латента."""
     if warmup_epochs <= 0:
         return beta
     progress = (epoch + step_in_epoch) / warmup_epochs

@@ -10,8 +10,8 @@ import torch
 # ---------- классификация ----------
 
 def classification_metrics(targets, preds, num_classes: int) -> dict:
-    """UA (balanced accuracy) — средняя полнота по классам, WA — обычная точность,
-    macro F1 — среднее F1 по классам. При дисбалансе главная метрика — macro F1."""
+    """UA (balanced accuracy) - средняя полнота по классам, WA - обычная точность,
+    macro F1 - среднее F1 по классам. При дисбалансе главная метрика - macro F1."""
     targets, preds = np.asarray(targets), np.asarray(preds)
     cm = np.zeros((num_classes, num_classes), dtype=np.int64)
     for t, p in zip(targets, preds):
@@ -53,7 +53,7 @@ def separation_metrics(est: torch.Tensor, clean: torch.Tensor, mix: torch.Tensor
             out["pesq_mix"] = float(pesq(mix[0], clean[0], sr, "wb"))
             out["stoi"] = float(stoi(est[0], clean[0], sr))
             out["stoi_mix"] = float(stoi(mix[0], clean[0], sr))
-        except Exception as e:  # pesq может упасть на тишине — пропускаем пример
+        except Exception as e:  # pesq может упасть на тишине - пропускаем пример
             out["perceptual_error"] = str(e)[:80]
     return out
 
@@ -61,7 +61,7 @@ def separation_metrics(est: torch.Tensor, clean: torch.Tensor, mix: torch.Tensor
 # ---------- распознавание речи ----------
 
 def normalize_text(text: str) -> str:
-    """Нижний регистр, ё → е, без пунктуации — иначе «Карту!» и «карту» засчитаются как ошибка."""
+    """Нижний регистр, ё → е, без пунктуации - иначе «Карту!» и «карту» засчитаются как ошибка."""
     text = text.lower().replace("ё", "е")
     text = re.sub(r"[^\w\s]", " ", text)
     return re.sub(r"\s+", " ", text).strip()

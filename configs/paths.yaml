@@ -1,4 +1,4 @@
-# Пути на Google Drive. Меняются в одном месте — остальные конфиги наследуют этот файл.
+# Пути на Google Drive. Меняются в одном месте - остальные конфиги наследуют этот файл.
 data_root: /content/drive/MyDrive/coursework/data
 runs_root: /content/drive/MyDrive/coursework/runs
 seed: 42

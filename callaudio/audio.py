@@ -11,7 +11,7 @@ import torch.nn as nn
 SAMPLE_RATE = 16000
 
 # Параметры мел-спектрограммы, совпадающие с вокодером
-# speechbrain/tts-hifigan-libritts-16kHz — чтобы спектрограммы VAE можно было озвучить.
+# speechbrain/tts-hifigan-libritts-16kHz - чтобы спектрограммы VAE можно было озвучить.
 VOCODER_MEL = dict(
     sample_rate=SAMPLE_RATE, n_fft=1024, win_length=1024, hop_length=256,
     f_min=0.0, f_max=8000.0, n_mels=80, power=1.0, norm="slaney", mel_scale="slaney",
@@ -50,7 +50,7 @@ def _load_with_ffmpeg(path: str, sr: int) -> np.ndarray:
 
 def load_audio(path: str, sr: int = SAMPLE_RATE, start: float | None = None, duration: float | None = None) -> np.ndarray:
     """Возвращает моно float32 в [-1, 1] с частотой sr.
-    wav/flac читаются через soundfile (можно читать кусок), остальное — через ffmpeg."""
+    wav/flac читаются через soundfile (можно читать кусок), остальное - через ffmpeg."""
     import soundfile as sf
 
     try:

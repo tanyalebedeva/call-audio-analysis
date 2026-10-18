@@ -3,9 +3,9 @@
 Локально или в Colab:    python app/app.py --share
 Пути к моделям задаются переменными окружения или аргументами:
     ENHANCER_CKPT   чекпойнт модуля 1 (очистка)
-    EMOTION_CKPT    чекпойнт модуля 2 (эмоции); если не задан — открытая HuBERT, дообученная на Dusha
+    EMOTION_CKPT    чекпойнт модуля 2 (эмоции); если не задан - открытая HuBERT, дообученная на Dusha
     VAE_CKPT        чекпойнт модуля 3 (VAE)
-    UMAP_PKL        viz/umap_final.pkl прогона эмоций — для карты эмоций
+    UMAP_PKL        viz/umap_final.pkl прогона эмоций - для карты эмоций
 """
 from __future__ import annotations
 
@@ -215,7 +215,7 @@ def build_ui():
             iaudio = gr.Audio(label="Все шаги подряд")
             ibtn.click(run_interpolation, [wa, wb, steps, voc], [igrid, iaudio])
         with gr.Tab("Карта эмоций"):
-            gr.Markdown("Пространство эмбеддингов классификатора эмоций (UMAP). Загрузите запись — её реплики появятся на карте.")
+            gr.Markdown("Пространство эмбеддингов классификатора эмоций (UMAP). Загрузите запись - её реплики появятся на карте.")
             mfile = gr.Audio(sources=["upload"], type="filepath", label="Запись (необязательно)")
             mbtn = gr.Button("Показать карту", variant="primary")
             mplot = gr.Plot()
