@@ -1,0 +1,4 @@
+base: base.yaml
+out_dir: "{runs_root}/vae_beta4"
+loss:
+  beta: 4.0

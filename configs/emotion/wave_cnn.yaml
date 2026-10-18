@@ -1,0 +1,5 @@
+base: base.yaml
+out_dir: "{runs_root}/emo_wave_ce"
+model:
+  name: wave_cnn
+batch_size: 64

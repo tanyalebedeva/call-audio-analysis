@@ -1,0 +1,6 @@
+base: base.yaml
+out_dir: "{runs_root}/sep_tasnet_l1"
+model:
+  name: convtasnet
+loss:
+  name: l1_spec

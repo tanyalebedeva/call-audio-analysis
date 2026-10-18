@@ -1,0 +1,6 @@
+base: base.yaml
+out_dir: "{runs_root}/sep_unet_mrstft"
+model:
+  name: unet
+loss:
+  name: mrstft

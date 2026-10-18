@@ -1,0 +1,4 @@
+base: base.yaml
+out_dir: "{runs_root}/cvae_mse"
+model:
+  conditional: true

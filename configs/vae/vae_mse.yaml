@@ -1,0 +1,2 @@
+base: base.yaml
+out_dir: "{runs_root}/vae_mse"

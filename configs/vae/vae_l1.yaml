@@ -1,0 +1,4 @@
+base: base.yaml
+out_dir: "{runs_root}/vae_l1"
+loss:
+  recon: l1

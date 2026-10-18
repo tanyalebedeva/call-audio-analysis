@@ -1,0 +1,9 @@
+base: base.yaml
+out_dir: "{runs_root}/emo_hubert_frozen_ce"
+model:
+  name: ssl
+  pretrained: facebook/hubert-base-ls960
+  freeze: true
+  unfreeze_top: 0
+epochs: 10
+lr: 1.0e-3

@@ -1,0 +1,6 @@
+base: base.yaml
+out_dir: "{runs_root}/emo_latent_vae_ce"
+model:
+  name: latent
+  vae_checkpoint: "{runs_root}/vae_dusha/best.pt"
+batch_size: 64

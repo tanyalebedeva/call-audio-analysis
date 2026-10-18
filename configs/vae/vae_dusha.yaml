@@ -1,0 +1,9 @@
+# VAE на односекундных фрагментах русской речи — его латенты идут признаками в модуль 2.
+# Манифест строится командой: python -m callaudio.data.prepare dusha_windows (см. ноутбук 03).
+base: base.yaml
+out_dir: "{runs_root}/vae_dusha"
+data:
+  train: "{data_root}/manifests/dusha_windows_train.jsonl"
+  val: "{data_root}/manifests/dusha_windows_val.jsonl"
+  test: "{data_root}/manifests/dusha_windows_val.jsonl"
+epochs: 25

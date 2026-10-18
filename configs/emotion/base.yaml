@@ -1,0 +1,19 @@
+base: ../paths.yaml
+task: emotion
+data:
+  train: "{data_root}/manifests/emotion_train.jsonl"
+  val: "{data_root}/manifests/emotion_val.jsonl"
+  test: "{data_root}/manifests/emotion_test.jsonl"
+  noise_test: "{data_root}/manifests/noise_test.jsonl"
+  labels: [neutral, angry, positive, sad]
+  max_sec: 4.0
+loss:
+  name: ce              # ce | weighted_ce | focal | focal_weighted
+  gamma: 2.0
+  label_smoothing: 0.0
+epochs: 20
+batch_size: 32
+eval_batch_size: 32
+lr: 1.0e-3
+weight_decay: 1.0e-4
+probe_size: 2000        # сбалансированная выборка для визуализации пространства

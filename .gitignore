@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+# данные, модели и результаты живут на Google Drive, а не в репозитории
+data/
+runs/
+pretrained/
+*.pt
+*.wav
+*.flac
+*.npz
+*.pkl
+!reports/
+.DS_Store

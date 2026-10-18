@@ -1,0 +1,6 @@
+base: base.yaml
+out_dir: "{runs_root}/sep_unet_l1"
+model:
+  name: unet
+loss:
+  name: l1_spec

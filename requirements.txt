@@ -1,0 +1,21 @@
+# torch и torchaudio в Colab уже установлены; локально поставьте их с pytorch.org
+numpy
+scipy
+soundfile
+pyyaml
+requests
+scikit-learn
+umap-learn
+matplotlib
+plotly
+torchmetrics
+pesq
+pystoi
+jiwer
+transformers
+datasets
+faster-whisper
+silero-vad
+speechbrain
+gradio
+pytest

@@ -1,0 +1,10 @@
+base: base.yaml
+out_dir: "{runs_root}/emo_hubert_ft_ce"
+model:
+  name: ssl
+  pretrained: facebook/hubert-base-ls960
+  freeze: true
+  unfreeze_top: 4       # дообучаем 4 верхних слоя трансформера
+epochs: 8
+batch_size: 16
+lr: 5.0e-5

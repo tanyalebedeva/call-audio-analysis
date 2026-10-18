@@ -1,0 +1,6 @@
+base: base.yaml
+out_dir: "{runs_root}/sep_tasnet_sisdr"
+model:
+  name: convtasnet
+loss:
+  name: si_sdr

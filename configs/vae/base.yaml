@@ -1,0 +1,18 @@
+base: ../paths.yaml
+task: vae
+data:
+  train: "{data_root}/manifests/commands_train.jsonl"
+  val: "{data_root}/manifests/commands_val.jsonl"
+  test: "{data_root}/manifests/commands_test.jsonl"
+model:
+  latent_dim: 32
+  conditional: false
+loss:
+  recon: mse            # mse | l1
+  beta: 1.0
+  warmup_epochs: 5      # KL annealing
+epochs: 40
+batch_size: 128
+eval_batch_size: 256
+lr: 1.0e-3
+probe_size: 2000

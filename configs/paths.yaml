@@ -1,0 +1,13 @@
+# Пути на Google Drive. Меняются в одном месте — остальные конфиги наследуют этот файл.
+data_root: /content/drive/MyDrive/coursework/data
+runs_root: /content/drive/MyDrive/coursework/runs
+seed: 42
+device: auto
+amp: true
+num_workers: 2
+resume: true
+max_minutes: 150      # мягкий лимит на прогон: успеть сохраниться до обрыва сессии Colab
+log_every: 50
+wandb:
+  enabled: false
+  project: call-audio-analysis
