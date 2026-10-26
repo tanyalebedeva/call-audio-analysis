@@ -3,7 +3,7 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 # данные, модели и результаты живут на Google Drive, а не в репозитории
-data/
+/data/
 runs/
 pretrained/
 *.pt
