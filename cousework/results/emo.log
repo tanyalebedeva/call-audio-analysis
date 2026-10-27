@@ -1,0 +1,162 @@
+[train] emotion · MelCNN · параметров 1.35 M (обучаемых 1.35 M) · устройство cuda
+[train] продолжаю с эпохи 3, лучший score 0.5177
+  эпоха 3 шаг 100/337 loss=0.9672 acc=0.5944
+  эпоха 3 шаг 200/337 loss=0.9436 acc=0.6072
+  эпоха 3 шаг 300/337 loss=0.9358 acc=0.6118
+[эпоха 3/15] train_loss=0.9293 train_acc=0.6148 val_ua=0.5608 val_wa=0.5608 val_macro_f1=0.5435 val_score=0.5435
+  ↑ новый лучший score 0.5435, сохранён best.pt
+  эпоха 4 шаг 100/337 loss=0.8754 acc=0.6442
+  эпоха 4 шаг 200/337 loss=0.8774 acc=0.6406
+  эпоха 4 шаг 300/337 loss=0.8680 acc=0.6457
+[эпоха 4/15] train_loss=0.8652 train_acc=0.6482 val_ua=0.5487 val_wa=0.5487 val_macro_f1=0.5197 val_score=0.5197
+  эпоха 5 шаг 100/337 loss=0.8383 acc=0.6562
+  эпоха 5 шаг 200/337 loss=0.8428 acc=0.6540
+  эпоха 5 шаг 300/337 loss=0.8349 acc=0.6574
+[эпоха 5/15] train_loss=0.8352 train_acc=0.6580 val_ua=0.6725 val_wa=0.6725 val_macro_f1=0.6707 val_score=0.6707
+  ↑ новый лучший score 0.6707, сохранён best.pt
+  эпоха 6 шаг 100/337 loss=0.7841 acc=0.6845
+  эпоха 6 шаг 200/337 loss=0.7861 acc=0.6816
+  эпоха 6 шаг 300/337 loss=0.7956 acc=0.6790
+[эпоха 6/15] train_loss=0.7968 train_acc=0.6793 val_ua=0.6729 val_wa=0.6729 val_macro_f1=0.6691 val_score=0.6691
+  эпоха 7 шаг 100/337 loss=0.7389 acc=0.7072
+  эпоха 7 шаг 200/337 loss=0.7523 acc=0.6992
+  эпоха 7 шаг 300/337 loss=0.7562 acc=0.6963
+[эпоха 7/15] train_loss=0.7532 train_acc=0.6984 val_ua=0.6796 val_wa=0.6796 val_macro_f1=0.6665 val_score=0.6665
+  эпоха 8 шаг 100/337 loss=0.7090 acc=0.7166
+  эпоха 8 шаг 200/337 loss=0.7106 acc=0.7166
+  эпоха 8 шаг 300/337 loss=0.7130 acc=0.7126
+[эпоха 8/15] train_loss=0.7124 train_acc=0.7132 val_ua=0.6812 val_wa=0.6813 val_macro_f1=0.6825 val_score=0.6825
+  ↑ новый лучший score 0.6825, сохранён best.pt
+  эпоха 9 шаг 100/337 loss=0.6705 acc=0.7309
+  эпоха 9 шаг 200/337 loss=0.6620 acc=0.7348
+  эпоха 9 шаг 300/337 loss=0.6615 acc=0.7349
+[эпоха 9/15] train_loss=0.6627 train_acc=0.7338 val_ua=0.7154 val_wa=0.7154 val_macro_f1=0.7144 val_score=0.7144
+  ↑ новый лучший score 0.7144, сохранён best.pt
+  эпоха 10 шаг 100/337 loss=0.6343 acc=0.7423
+  эпоха 10 шаг 200/337 loss=0.6230 acc=0.7502
+  эпоха 10 шаг 300/337 loss=0.6207 acc=0.7518
+[эпоха 10/15] train_loss=0.6209 train_acc=0.7506 val_ua=0.7212 val_wa=0.7212 val_macro_f1=0.7218 val_score=0.7218
+  ↑ новый лучший score 0.7218, сохранён best.pt
+  эпоха 11 шаг 100/337 loss=0.5736 acc=0.7775
+  эпоха 11 шаг 200/337 loss=0.5763 acc=0.7780
+  эпоха 11 шаг 300/337 loss=0.5812 acc=0.7739
+[эпоха 11/15] train_loss=0.5797 train_acc=0.7749 val_ua=0.7312 val_wa=0.7312 val_macro_f1=0.7316 val_score=0.7316
+  ↑ новый лучший score 0.7316, сохранён best.pt
+  эпоха 12 шаг 100/337 loss=0.5345 acc=0.7884
+  эпоха 12 шаг 200/337 loss=0.5343 acc=0.7916
+  эпоха 12 шаг 300/337 loss=0.5333 acc=0.7923
+[эпоха 12/15] train_loss=0.5338 train_acc=0.7921 val_ua=0.7375 val_wa=0.7375 val_macro_f1=0.7364 val_score=0.7364
+  ↑ новый лучший score 0.7364, сохранён best.pt
+  эпоха 13 шаг 100/337 loss=0.5055 acc=0.8013
+  эпоха 13 шаг 200/337 loss=0.5027 acc=0.8046
+  эпоха 13 шаг 300/337 loss=0.4972 acc=0.8063
+[эпоха 13/15] train_loss=0.5002 train_acc=0.8047 val_ua=0.7396 val_wa=0.7396 val_macro_f1=0.7396 val_score=0.7396
+  ↑ новый лучший score 0.7396, сохранён best.pt
+  эпоха 14 шаг 100/337 loss=0.4917 acc=0.8013
+  эпоха 14 шаг 200/337 loss=0.4892 acc=0.8057
+  эпоха 14 шаг 300/337 loss=0.4856 acc=0.8098
+[эпоха 14/15] train_loss=0.4831 train_acc=0.8116 val_ua=0.7363 val_wa=0.7362 val_macro_f1=0.7341 val_score=0.7341
+  эпоха 15 шаг 100/337 loss=0.4756 acc=0.8223
+  эпоха 15 шаг 200/337 loss=0.4692 acc=0.8252
+  эпоха 15 шаг 300/337 loss=0.4695 acc=0.8239
+[эпоха 15/15] train_loss=0.4734 train_acc=0.8219 val_ua=0.7300 val_wa=0.7300 val_macro_f1=0.7294 val_score=0.7294
+[train] готово: {'best_score': 0.7396351132652498, 'out_dir': '/kaggle/working/runs/emo_mel_ce'}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 2523.71it/s]
+[train] emotion · SSLClassifier · параметров 94.96 M (обучаемых 0.59 M) · устройство cuda
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/kaggle/working/caa/callaudio/train.py", line 145, in <module>
+    main()
+    ~~~~^^
+  File "/kaggle/working/caa/callaudio/train.py", line 140, in main
+    result = train(cfg)
+  File "/kaggle/working/caa/callaudio/train.py", line 91, in train
+    loss, logs = task.loss(model, batch, epoch, step / len(train_loader))
+                 ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/working/caa/callaudio/tasks.py", line 167, in loss
+    logits = model(batch["wav"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/kaggle/working/caa/callaudio/models/emotion.py", line 176, in forward
+    return self.head.classifier(self.embed(wav))
+                                ~~~~~~~~~~^^^^^
+  File "/kaggle/working/caa/callaudio/models/emotion.py", line 172, in embed
+    h = (w * hs).sum(0).transpose(1, 2)                            # (B, D, T)
+         ~~^~~~
+RuntimeError: The size of tensor a (13) must match the size of tensor b (11) at non-singleton dimension 0
+[train] emotion · MelCNN · параметров 1.35 M (обучаемых 1.35 M) · устройство cuda
+  эпоха 1 шаг 100/337 loss=0.7606 acc=0.3434
+  эпоха 1 шаг 200/337 loss=0.7192 acc=0.3861
+  эпоха 1 шаг 300/337 loss=0.6877 acc=0.4178
+[эпоха 1/8] train_loss=0.6770 train_acc=0.4286 val_ua=0.4071 val_wa=0.4071 val_macro_f1=0.3525 val_score=0.3525
+  ↑ новый лучший score 0.3525, сохранён best.pt
+  эпоха 2 шаг 100/337 loss=0.5644 acc=0.5303
+  эпоха 2 шаг 200/337 loss=0.5532 acc=0.5359
+  эпоха 2 шаг 300/337 loss=0.5367 acc=0.5491
+[эпоха 2/8] train_loss=0.5326 train_acc=0.5516 val_ua=0.5592 val_wa=0.5592 val_macro_f1=0.4963 val_score=0.4963
+  ↑ новый лучший score 0.4963, сохранён best.pt
+  эпоха 3 шаг 100/337 loss=0.4779 acc=0.5962
+  эпоха 3 шаг 200/337 loss=0.4768 acc=0.5962
+  эпоха 3 шаг 300/337 loss=0.4695 acc=0.6016
+[эпоха 3/8] train_loss=0.4701 train_acc=0.6010 val_ua=0.5654 val_wa=0.5654 val_macro_f1=0.5310 val_score=0.5310
+  ↑ новый лучший score 0.5310, сохранён best.pt
+  эпоха 4 шаг 100/337 loss=0.4232 acc=0.6323
+  эпоха 4 шаг 200/337 loss=0.4254 acc=0.6333
+  эпоха 4 шаг 300/337 loss=0.4274 acc=0.6311
+[эпоха 4/8] train_loss=0.4265 train_acc=0.6329 val_ua=0.6454 val_wa=0.6454 val_macro_f1=0.6365 val_score=0.6365
+  ↑ новый лучший score 0.6365, сохранён best.pt
+  эпоха 5 шаг 100/337 loss=0.3823 acc=0.6675
+  эпоха 5 шаг 200/337 loss=0.3875 acc=0.6633
+  эпоха 5 шаг 300/337 loss=0.3868 acc=0.6645
+[эпоха 5/8] train_loss=0.3851 train_acc=0.6655 val_ua=0.6554 val_wa=0.6554 val_macro_f1=0.6462 val_score=0.6462
+  ↑ новый лучший score 0.6462, сохранён best.pt
+  эпоха 6 шаг 100/337 loss=0.3542 acc=0.6795
+  эпоха 6 шаг 200/337 loss=0.3520 acc=0.6837
+  эпоха 6 шаг 300/337 loss=0.3521 acc=0.6847
+[эпоха 6/8] train_loss=0.3509 train_acc=0.6866 val_ua=0.6854 val_wa=0.6854 val_macro_f1=0.6808 val_score=0.6808
+  ↑ новый лучший score 0.6808, сохранён best.pt
+  эпоха 7 шаг 100/337 loss=0.3266 acc=0.6995
+  эпоха 7 шаг 200/337 loss=0.3186 acc=0.7055
+  эпоха 7 шаг 300/337 loss=0.3180 acc=0.7059
+[эпоха 7/8] train_loss=0.3184 train_acc=0.7071 val_ua=0.7108 val_wa=0.7108 val_macro_f1=0.7078 val_score=0.7078
+  ↑ новый лучший score 0.7078, сохранён best.pt
+  эпоха 8 шаг 100/337 loss=0.3033 acc=0.7158
+  эпоха 8 шаг 200/337 loss=0.3060 acc=0.7148
+  эпоха 8 шаг 300/337 loss=0.3011 acc=0.7198
+[эпоха 8/8] train_loss=0.3016 train_acc=0.7189 val_ua=0.7158 val_wa=0.7158 val_macro_f1=0.7137 val_score=0.7137
+  ↑ новый лучший score 0.7137, сохранён best.pt
+[train] готово: {'best_score': 0.7136913770379093, 'out_dir': '/kaggle/working/runs/emo_mel_focal'}
+[evaluate] результаты: /kaggle/working/runs/emo_mel_ce/results_emotion.json
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/kaggle/working/caa/callaudio/evaluate.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/kaggle/working/caa/callaudio/evaluate.py", line 320, in main
+    {"separation": evaluate_separation, "emotion": evaluate_emotion, "vae": evaluate_vae}[a.task](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/kaggle/working/caa/callaudio/evaluate.py", line 129, in evaluate_emotion
+    model, task, ck = load_trained(a.ckpt, device)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/kaggle/working/caa/callaudio/tasks.py", line 308, in load_trained
+    ck = load_checkpoint(checkpoint)
+  File "/kaggle/working/caa/callaudio/utils.py", line 105, in load_checkpoint
+    return torch.load(path, map_location=map_location, weights_only=False)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/serialization.py", line 1530, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/usr/local/lib/python3.13/dist-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/runs/emo_hubert_frozen_ce/best.pt'
+[evaluate] результаты: /kaggle/working/runs/emo_mel_focal/results_emotion.json
+ГОТОВО

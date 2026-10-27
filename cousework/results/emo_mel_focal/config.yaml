@@ -1,0 +1,37 @@
+data_root: /tmp/data
+runs_root: /kaggle/working/runs
+seed: 42
+device: auto
+amp: true
+num_workers: 2
+resume: true
+max_minutes: 16
+log_every: 100
+wandb:
+  enabled: false
+  project: call-audio-analysis
+task: emotion
+data:
+  train: /tmp/data/manifests/emotion_train.jsonl
+  val: /tmp/data/manifests/emotion_val.jsonl
+  test: /tmp/data/manifests/emotion_test.jsonl
+  noise_test: /tmp/data/manifests/noise_test.jsonl
+  labels:
+  - neutral
+  - angry
+  - positive
+  - sad
+  max_sec: 4.0
+loss:
+  name: focal
+  gamma: 2.0
+  label_smoothing: 0.0
+epochs: 8
+batch_size: 64
+eval_batch_size: 32
+lr: 0.001
+weight_decay: 0.0001
+probe_size: 2000
+out_dir: /kaggle/working/runs/emo_mel_focal
+model:
+  name: mel_cnn

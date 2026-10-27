@@ -1,0 +1,30 @@
+data_root: /tmp/data
+runs_root: /kaggle/working/runs
+seed: 42
+device: auto
+amp: true
+num_workers: 2
+resume: true
+max_minutes: 15
+log_every: 100
+wandb:
+  enabled: false
+  project: call-audio-analysis
+task: vae
+data:
+  train: /tmp/data/manifests/commands_train.jsonl
+  val: /tmp/data/manifests/commands_val.jsonl
+  test: /tmp/data/manifests/commands_test.jsonl
+model:
+  latent_dim: 32
+  conditional: false
+loss:
+  recon: mse
+  beta: 1.0
+  warmup_epochs: 5
+epochs: 15
+batch_size: 128
+eval_batch_size: 256
+lr: 0.001
+probe_size: 2000
+out_dir: /kaggle/working/runs/vae_mse

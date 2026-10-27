@@ -1,0 +1,39 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 6822.85it/s]
+[train] emotion · SSLClassifier · параметров 94.96 M (обучаемых 0.59 M) · устройство cuda
+  эпоха 1 шаг 100/675 loss=1.1190 acc=0.5094
+  эпоха 1 шаг 200/675 loss=0.9635 acc=0.5914
+  эпоха 1 шаг 300/675 loss=0.8756 acc=0.6323
+  эпоха 1 шаг 400/675 loss=0.8236 acc=0.6559
+  эпоха 1 шаг 500/675 loss=0.7912 acc=0.6728
+  эпоха 1 шаг 600/675 loss=0.7665 acc=0.6853
+[эпоха 1/4] train_loss=0.7518 train_acc=0.6923 val_ua=0.7625 val_wa=0.7625 val_macro_f1=0.7639 val_score=0.7639
+  ↑ новый лучший score 0.7639, сохранён best.pt
+  эпоха 2 шаг 100/675 loss=0.5703 acc=0.7738
+  эпоха 2 шаг 200/675 loss=0.5624 acc=0.7786
+  эпоха 2 шаг 300/675 loss=0.5595 acc=0.7780
+  эпоха 2 шаг 400/675 loss=0.5550 acc=0.7811
+  эпоха 2 шаг 500/675 loss=0.5541 acc=0.7818
+  эпоха 2 шаг 600/675 loss=0.5538 acc=0.7822
+[эпоха 2/4] train_loss=0.5547 train_acc=0.7812 val_ua=0.7771 val_wa=0.7771 val_macro_f1=0.7803 val_score=0.7803
+  ↑ новый лучший score 0.7803, сохранён best.pt
+  эпоха 3 шаг 100/675 loss=0.4744 acc=0.8125
+  эпоха 3 шаг 200/675 loss=0.4691 acc=0.8156
+  эпоха 3 шаг 300/675 loss=0.4797 acc=0.8115
+  эпоха 3 шаг 400/675 loss=0.4802 acc=0.8119
+  эпоха 3 шаг 500/675 loss=0.4764 acc=0.8147
+  эпоха 3 шаг 600/675 loss=0.4795 acc=0.8126
+[эпоха 3/4] train_loss=0.4759 train_acc=0.8142 val_ua=0.7946 val_wa=0.7946 val_macro_f1=0.7963 val_score=0.7963
+  ↑ новый лучший score 0.7963, сохранён best.pt
+  эпоха 4 шаг 100/675 loss=0.4306 acc=0.8319
+  эпоха 4 шаг 200/675 loss=0.4397 acc=0.8320
+  эпоха 4 шаг 300/675 loss=0.4340 acc=0.8328
+  эпоха 4 шаг 400/675 loss=0.4345 acc=0.8328
+  эпоха 4 шаг 500/675 loss=0.4310 acc=0.8341
+  эпоха 4 шаг 600/675 loss=0.4302 acc=0.8332
+[эпоха 4/4] train_loss=0.4311 train_acc=0.8325 val_ua=0.7950 val_wa=0.7950 val_macro_f1=0.7953 val_score=0.7953
+[train] готово: {'best_score': 0.796327356781019, 'out_dir': '/kaggle/working/runs/emo_hubert_frozen_ce'}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 11603.49it/s]
+[evaluate] результаты: /kaggle/working/runs/emo_hubert_frozen_ce/results_emotion.json
+ГОТОВО

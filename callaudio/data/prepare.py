@@ -160,7 +160,7 @@ def prepare_golos_hf(out: Path) -> None:
         ds = load_dataset(name, split="test", streaming=True).cast_column("audio", Audio(decode=False))
         n = 0
         for i, ex in enumerate(ds):
-            text = ex.get("transcription", ex.get("text", ""))
+            text = ex.get("transcription") or ex.get("text") or ""
             try:
                 wav, sr = sf.read(io.BytesIO(ex["audio"]["bytes"]), dtype="float32", always_2d=True)
             except Exception:

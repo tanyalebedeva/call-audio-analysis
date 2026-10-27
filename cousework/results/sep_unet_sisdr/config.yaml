@@ -1,0 +1,38 @@
+data_root: /tmp/data
+runs_root: /kaggle/working/runs
+seed: 42
+device: auto
+amp: true
+num_workers: 2
+resume: true
+max_minutes: 50
+log_every: 50
+wandb:
+  enabled: false
+  project: call-audio-analysis
+task: separation
+data:
+  speech_train: /tmp/data/manifests/speech_train.jsonl
+  speech_val: /tmp/data/manifests/speech_val.jsonl
+  speech_test: /tmp/data/manifests/speech_test.jsonl
+  noise_train: /tmp/data/manifests/noise_train.jsonl
+  noise_val: /tmp/data/manifests/noise_val.jsonl
+  noise_test: /tmp/data/manifests/noise_test.jsonl
+  segment_sec: 4.0
+  snr_range:
+  - -5
+  - 15
+  epoch_size: 4000
+  val_size: 300
+  telephone_prob: 0.0
+epochs: 25
+batch_size: 16
+eval_batch_size: 16
+lr: 0.001
+weight_decay: 0.0001
+grad_clip: 5.0
+out_dir: /kaggle/working/runs/sep_unet_sisdr
+model:
+  name: unet
+loss:
+  name: si_sdr

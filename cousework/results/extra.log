@@ -1,0 +1,37 @@
+[vae] статистика лог-мел: mean=-6.660, std=2.646
+[train] vae · ConvVAE · параметров 1.98 M (обучаемых 1.98 M) · устройство cuda
+[train] продолжаю с эпохи 8, лучший score -0.0683
+  эпоха 8 шаг 100/240 loss=432.4925 recon=363.7022 kl=68.7903 beta=1.0000
+  эпоха 8 шаг 200/240 loss=432.8053 recon=364.1574 kl=68.6480 beta=1.0000
+[эпоха 8/15] train_loss=432.2863 train_recon=363.6921 train_kl=68.5942 train_beta=1.0000 val_recon_mse=0.0660 val_kl=68.0745 val_score=-0.0660
+  ↑ новый лучший score -0.0660, сохранён best.pt
+  эпоха 9 шаг 100/240 loss=424.5186 recon=357.1362 kl=67.3824 beta=1.0000
+  эпоха 9 шаг 200/240 loss=423.5893 recon=356.1916 kl=67.3977 beta=1.0000
+[эпоха 9/15] train_loss=422.8393 train_recon=355.4239 train_kl=67.4154 train_beta=1.0000 val_recon_mse=0.0646 val_kl=67.0621 val_score=-0.0646
+  ↑ новый лучший score -0.0646, сохранён best.pt
+  эпоха 10 шаг 100/240 loss=414.6245 recon=347.6275 kl=66.9970 beta=1.0000
+  эпоха 10 шаг 200/240 loss=414.4971 recon=347.5697 kl=66.9274 beta=1.0000
+[эпоха 10/15] train_loss=414.3834 train_recon=347.5496 train_kl=66.8338 train_beta=1.0000 val_recon_mse=0.0661 val_kl=67.3237 val_score=-0.0661
+  эпоха 11 шаг 100/240 loss=412.2970 recon=345.5790 kl=66.7180 beta=1.0000
+  эпоха 11 шаг 200/240 loss=411.3248 recon=344.7054 kl=66.6194 beta=1.0000
+[эпоха 11/15] train_loss=410.4387 train_recon=343.8495 train_kl=66.5891 train_beta=1.0000 val_recon_mse=0.0639 val_kl=65.7597 val_score=-0.0639
+  ↑ новый лучший score -0.0639, сохранён best.pt
+  эпоха 12 шаг 100/240 loss=403.6203 recon=337.3785 kl=66.2419 beta=1.0000
+  эпоха 12 шаг 200/240 loss=404.7828 recon=338.5249 kl=66.2579 beta=1.0000
+[эпоха 12/15] train_loss=404.7569 train_recon=338.4664 train_kl=66.2905 train_beta=1.0000 val_recon_mse=0.0634 val_kl=65.6037 val_score=-0.0634
+  ↑ новый лучший score -0.0634, сохранён best.pt
+  эпоха 13 шаг 100/240 loss=399.9077 recon=333.8631 kl=66.0447 beta=1.0000
+  эпоха 13 шаг 200/240 loss=399.4660 recon=333.4638 kl=66.0023 beta=1.0000
+[эпоха 13/15] train_loss=399.5886 train_recon=333.5860 train_kl=66.0026 train_beta=1.0000 val_recon_mse=0.0630 val_kl=65.2736 val_score=-0.0630
+  ↑ новый лучший score -0.0630, сохранён best.pt
+  эпоха 14 шаг 100/240 loss=397.8978 recon=332.1137 kl=65.7841 beta=1.0000
+  эпоха 14 шаг 200/240 loss=398.8835 recon=333.0931 kl=65.7903 beta=1.0000
+[эпоха 14/15] train_loss=398.6837 train_recon=332.8954 train_kl=65.7883 train_beta=1.0000 val_recon_mse=0.0628 val_kl=65.2182 val_score=-0.0628
+  ↑ новый лучший score -0.0628, сохранён best.pt
+  эпоха 15 шаг 100/240 loss=394.4143 recon=328.4014 kl=66.0129 beta=1.0000
+  эпоха 15 шаг 200/240 loss=395.9496 recon=329.9014 kl=66.0482 beta=1.0000
+[эпоха 15/15] train_loss=395.6700 train_recon=329.6583 train_kl=66.0118 train_beta=1.0000 val_recon_mse=0.0627 val_kl=65.7010 val_score=-0.0627
+  ↑ новый лучший score -0.0627, сохранён best.pt
+[train] готово: {'best_score': -0.06266145786014467, 'out_dir': '/kaggle/working/runs/cvae_mse'}
+[evaluate] результаты: /kaggle/working/runs/cvae_mse/results_vae.json
+ГОТОВО

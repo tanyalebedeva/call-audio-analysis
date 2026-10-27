@@ -73,7 +73,7 @@ class SeparationDataset(Dataset):
             wav = _load_segment(row, seconds, rng)
             if np.sqrt(np.mean(wav ** 2)) > 1e-3 or self.deterministic:
                 break
-        return wav, row.get("text", "")
+        return wav, row.get("text") or ""
 
     def _noise(self, rng, length):
         if self.synthetic:

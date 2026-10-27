@@ -143,7 +143,7 @@ class SSLClassifier(nn.Module):
         super().__init__()
         from transformers import AutoModel
 
-        self.backbone = AutoModel.from_pretrained(pretrained)
+        self.backbone = AutoModel.from_pretrained(pretrained, layerdrop=0.0)
         if hasattr(self.backbone, "feature_extractor"):
             self.backbone.feature_extractor._freeze_parameters()  # CNN-кодировщик сигнала всегда заморожен
         n_layers = self.backbone.config.num_hidden_layers
@@ -168,7 +168,7 @@ class SSLClassifier(nn.Module):
         wav = (wav - wav.mean(-1, keepdim=True)) / (wav.std(-1, keepdim=True) + 1e-6)
         out = self.backbone(wav, output_hidden_states=True)
         hs = torch.stack(out.hidden_states, dim=0)                     # (L+1, B, T, D)
-        w = torch.softmax(self.layer_weights, dim=0)[:, None, None, None]
+        w = torch.softmax(self.layer_weights[: hs.shape[0]], dim=0)[:, None, None, None]
         h = (w * hs).sum(0).transpose(1, 2)                            # (B, D, T)
         return self.head.embed(self.pool(h))
 

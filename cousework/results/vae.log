@@ -1,0 +1,63 @@
+[vae] статистика лог-мел: mean=-6.660, std=2.646
+[train] vae · ConvVAE · параметров 1.89 M (обучаемых 1.89 M) · устройство cuda
+/kaggle/working/caa/callaudio/train.py:98: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+  эпоха 1 шаг 100/240 loss=2464.6636 recon=2457.4044 kl=139.4718 beta=0.0413
+  эпоха 1 шаг 200/240 loss=1554.6752 recon=1540.6643 kl=153.5491 beta=0.0829
+[эпоха 1/15] train_loss=1387.6803 train_recon=1370.7706 train_kl=156.6016 train_beta=0.0996 val_recon_mse=0.0918 val_kl=177.1364 val_score=-0.0918
+  ↑ новый лучший score -0.0918, сохранён best.pt
+  эпоха 2 шаг 100/240 loss=506.2042 recon=470.5117 kl=148.4638 beta=0.2412
+  эпоха 2 шаг 200/240 loss=497.7634 recon=458.8830 kl=139.1684 beta=0.2829
+[эпоха 2/15] train_loss=496.2645 train_recon=456.0847 train_kl=136.2991 train_beta=0.2996 val_recon_mse=0.0958 val_kl=126.4674 val_score=-0.0958
+  эпоха 3 шаг 100/240 loss=494.7207 recon=443.7444 kl=115.8777 beta=0.4413
+  эпоха 3 шаг 200/240 loss=480.6288 recon=428.7274 kl=108.3499 beta=0.4829
+[эпоха 3/15] train_loss=478.6775 train_recon=426.3489 train_kl=105.8636 train_beta=0.4996 val_recon_mse=0.0816 val_kl=94.4104 val_score=-0.0816
+  ↑ новый лучший score -0.0816, сохранён best.pt
+  эпоха 4 шаг 100/240 loss=480.0786 recon=420.1941 kl=93.4575 beta=0.6412
+  эпоха 4 шаг 200/240 loss=475.1333 recon=414.0883 kl=89.6895 beta=0.6829
+[эпоха 4/15] train_loss=472.5565 train_recon=411.2165 train_kl=88.1151 train_beta=0.6996 val_recon_mse=0.0719 val_kl=79.0892 val_score=-0.0719
+  ↑ новый лучший score -0.0719, сохранён best.pt
+  эпоха 5 шаг 100/240 loss=463.4448 recon=397.6329 kl=78.2438 beta=0.8412
+  эпоха 5 шаг 200/240 loss=465.8370 recon=398.1250 kl=76.7820 beta=0.8829
+[эпоха 5/15] train_loss=465.7587 train_recon=397.3350 train_kl=76.1909 train_beta=0.8996 val_recon_mse=0.0728 val_kl=73.7155 val_score=-0.0728
+  эпоха 6 шаг 100/240 loss=462.4884 recon=389.9793 kl=72.5090 beta=1.0000
+  эпоха 6 шаг 200/240 loss=462.6232 recon=390.3399 kl=72.2833 beta=1.0000
+[эпоха 6/15] train_loss=463.4065 train_recon=391.1178 train_kl=72.2887 train_beta=1.0000 val_recon_mse=0.0746 val_kl=71.2996 val_score=-0.0746
+[train] достигнут лимит 15 мин - остановка. Запустите ту же команду, чтобы продолжить.
+[train] готово: {'best_score': -0.07186189806528939, 'out_dir': '/kaggle/working/runs/vae_mse'}
+[vae] статистика лог-мел: mean=-6.660, std=2.646
+[train] vae · ConvVAE · параметров 1.98 M (обучаемых 1.98 M) · устройство cuda
+/kaggle/working/caa/callaudio/train.py:98: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+  эпоха 1 шаг 100/240 loss=2292.2515 recon=2284.8564 kl=143.5293 beta=0.0413
+  эпоха 1 шаг 200/240 loss=1467.0284 recon=1452.5940 kl=157.5850 beta=0.0829
+[эпоха 1/15] train_loss=1313.9440 train_recon=1296.8420 train_kl=159.0952 train_beta=0.0996 val_recon_mse=0.1041 val_kl=166.5829 val_score=-0.1041
+  ↑ новый лучший score -0.1041, сохранён best.pt
+  эпоха 2 шаг 100/240 loss=518.8739 recon=481.7149 kl=154.4293 beta=0.2412
+  эпоха 2 шаг 200/240 loss=504.9514 recon=464.5795 kl=144.5608 beta=0.2829
+[эпоха 2/15] train_loss=502.3890 train_recon=460.8118 train_kl=141.1948 train_beta=0.2996 val_recon_mse=0.0905 val_kl=124.7349 val_score=-0.0905
+  ↑ новый лучший score -0.0905, сохранён best.pt
+  эпоха 3 шаг 100/240 loss=468.9135 recon=420.5955 kl=109.6826 beta=0.4413
+  эпоха 3 шаг 200/240 loss=465.1280 recon=415.4596 kl=103.5277 beta=0.4829
+[эпоха 3/15] train_loss=463.5154 train_recon=413.4767 train_kl=101.1104 train_beta=0.4996 val_recon_mse=0.0759 val_kl=88.7182 val_score=-0.0759
+  ↑ новый лучший score -0.0759, сохранён best.pt
+  эпоха 4 шаг 100/240 loss=455.3574 recon=399.2969 kl=87.5020 beta=0.6412
+  эпоха 4 шаг 200/240 loss=462.3953 recon=403.8620 kl=85.8449 beta=0.6829
+[эпоха 4/15] train_loss=465.5395 train_recon=405.7673 train_kl=85.5834 train_beta=0.6996 val_recon_mse=0.0744 val_kl=85.8226 val_score=-0.0744
+  ↑ новый лучший score -0.0744, сохранён best.pt
+  эпоха 5 шаг 100/240 loss=458.4712 recon=392.8437 kl=78.0684 beta=0.8412
+  эпоха 5 шаг 200/240 loss=464.9278 recon=397.5011 kl=76.4888 beta=0.8829
+[эпоха 5/15] train_loss=466.3111 train_recon=398.1609 train_kl=75.9120 train_beta=0.8996 val_recon_mse=0.0709 val_kl=70.8614 val_score=-0.0709
+  ↑ новый лучший score -0.0709, сохранён best.pt
+  эпоха 6 шаг 100/240 loss=445.9263 recon=375.6803 kl=70.2460 beta=1.0000
+  эпоха 6 шаг 200/240 loss=447.6932 recon=377.4422 kl=70.2510 beta=1.0000
+[эпоха 6/15] train_loss=447.9382 train_recon=377.7448 train_kl=70.1934 train_beta=1.0000 val_recon_mse=0.0683 val_kl=70.1265 val_score=-0.0683
+  ↑ новый лучший score -0.0683, сохранён best.pt
+  эпоха 7 шаг 100/240 loss=440.7951 recon=371.3977 kl=69.3974 beta=1.0000
+  эпоха 7 шаг 200/240 loss=442.6598 recon=373.5569 kl=69.1028 beta=1.0000
+[эпоха 7/15] train_loss=441.5060 train_recon=372.5049 train_kl=69.0011 train_beta=1.0000 val_recon_mse=0.0697 val_kl=69.3966 val_score=-0.0697
+[train] достигнут лимит 15 мин - остановка. Запустите ту же команду, чтобы продолжить.
+[train] готово: {'best_score': -0.06833514193731355, 'out_dir': '/kaggle/working/runs/cvae_mse'}
+[evaluate] результаты: /kaggle/working/runs/vae_mse/results_vae.json
+[evaluate] результаты: /kaggle/working/runs/cvae_mse/results_vae.json
+ГОТОВО

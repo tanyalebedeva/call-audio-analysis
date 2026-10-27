@@ -1,0 +1,46 @@
+{
+  "checkpoint": "/kaggle/working/runs/cvae_mse/best.pt",
+  "words": [
+    "down",
+    "go",
+    "left",
+    "no",
+    "off",
+    "on",
+    "right",
+    "stop",
+    "up",
+    "yes"
+  ],
+  "conditional": true,
+  "recon_mse_logmel": 0.4565991759300232,
+  "latent_linear_probe_acc": 0.27,
+  "latent_silhouette": -0.02756311744451523,
+  "judge_acc_real": 0.491,
+  "judge_acc_recon": 0.647,
+  "judge_acc_generated": 0.4,
+  "interpolation": {
+    "from": "yes",
+    "to": "no",
+    "p_from": [
+      0.776,
+      0.878,
+      0.744,
+      0.405,
+      0.001,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "p_to": [
+      0.002,
+      0.013,
+      0.047,
+      0.123,
+      0.372,
+      0.432,
+      0.531,
+      0.68
+    ]
+  }
+}

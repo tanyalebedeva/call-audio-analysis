@@ -61,7 +61,11 @@ def load_audio(path: str, sr: int = SAMPLE_RATE, start: float | None = None, dur
         wav = wav.mean(axis=1)
         return resample(wav, file_sr, sr).astype(np.float32)
     except Exception:
-        wav = _load_with_ffmpeg(path, sr)
+        try:
+            wav = _load_with_ffmpeg(path, sr)
+        except Exception:
+            print(f"[audio] не удалось прочитать {path}, используется тишина", flush=True)
+            wav = np.zeros(int((duration or 1.0) * sr), dtype=np.float32)
         if start is not None or duration is not None:
             s = int((start or 0.0) * sr)
             e = s + int(duration * sr) if duration is not None else None
@@ -86,7 +90,7 @@ def mix_at_snr(speech: np.ndarray, noise: np.ndarray, snr_db: float) -> tuple[np
     """Масштабирует шум так, чтобы отношение сигнал/шум было ровно snr_db.
     Возвращает (смесь, масштабированный шум)."""
     gain = rms(speech) / (rms(noise) * 10 ** (snr_db / 20))
-    noise = noise * gain
+    noise = np.resize(noise, len(speech)) * gain
     return speech + noise, noise
 
 

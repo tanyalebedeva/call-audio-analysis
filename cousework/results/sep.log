@@ -1,0 +1,195 @@
+[train] separation · UNetMask · параметров 1.94 M (обучаемых 1.94 M) · устройство cuda
+/kaggle/working/caa/callaudio/train.py:98: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+  эпоха 1 шаг 50/250 loss=-4.9564 si_sdr=4.9564
+  эпоха 1 шаг 100/250 loss=-6.7561 si_sdr=6.7561
+  эпоха 1 шаг 150/250 loss=-7.5724 si_sdr=7.5724
+  эпоха 1 шаг 200/250 loss=-7.9747 si_sdr=7.9747
+  эпоха 1 шаг 250/250 loss=-8.2070 si_sdr=8.2070
+[эпоха 1/25] train_loss=-8.2070 train_si_sdr=8.2070 val_si_sdr=6.4817 val_si_sdr_mix=5.0023 val_si_sdri=1.4794 val_score=1.4794
+  ↑ новый лучший score 1.4794, сохранён best.pt
+  эпоха 2 шаг 50/250 loss=-9.4307 si_sdr=9.4307
+  эпоха 2 шаг 100/250 loss=-9.5785 si_sdr=9.5785
+  эпоха 2 шаг 150/250 loss=-9.6593 si_sdr=9.6593
+  эпоха 2 шаг 200/250 loss=-9.7376 si_sdr=9.7376
+  эпоха 2 шаг 250/250 loss=-9.8314 si_sdr=9.8314
+[эпоха 2/25] train_loss=-9.8314 train_si_sdr=9.8314 val_si_sdr=10.0728 val_si_sdr_mix=5.0023 val_si_sdri=5.0705 val_score=5.0705
+  ↑ новый лучший score 5.0705, сохранён best.pt
+  эпоха 3 шаг 50/250 loss=-10.4095 si_sdr=10.4095
+  эпоха 3 шаг 100/250 loss=-10.8344 si_sdr=10.8344
+  эпоха 3 шаг 150/250 loss=-10.8899 si_sdr=10.8899
+  эпоха 3 шаг 200/250 loss=-10.8484 si_sdr=10.8484
+  эпоха 3 шаг 250/250 loss=-10.9258 si_sdr=10.9258
+[эпоха 3/25] train_loss=-10.9258 train_si_sdr=10.9258 val_si_sdr=10.6603 val_si_sdr_mix=5.0023 val_si_sdri=5.6579 val_score=5.6579
+  ↑ новый лучший score 5.6579, сохранён best.pt
+  эпоха 4 шаг 50/250 loss=-11.2156 si_sdr=11.2156
+  эпоха 4 шаг 100/250 loss=-11.1789 si_sdr=11.1789
+  эпоха 4 шаг 150/250 loss=-11.2217 si_sdr=11.2217
+  эпоха 4 шаг 200/250 loss=-11.3418 si_sdr=11.3418
+  эпоха 4 шаг 250/250 loss=-11.3562 si_sdr=11.3562
+[эпоха 4/25] train_loss=-11.3562 train_si_sdr=11.3562 val_si_sdr=10.8434 val_si_sdr_mix=5.0023 val_si_sdri=5.8410 val_score=5.8410
+  ↑ новый лучший score 5.8410, сохранён best.pt
+  эпоха 5 шаг 50/250 loss=-11.7000 si_sdr=11.7000
+  эпоха 5 шаг 100/250 loss=-11.6012 si_sdr=11.6012
+  эпоха 5 шаг 150/250 loss=-11.6395 si_sdr=11.6395
+  эпоха 5 шаг 200/250 loss=-11.6523 si_sdr=11.6523
+  эпоха 5 шаг 250/250 loss=-11.7074 si_sdr=11.7074
+[эпоха 5/25] train_loss=-11.7074 train_si_sdr=11.7074 val_si_sdr=11.6815 val_si_sdr_mix=5.0023 val_si_sdri=6.6792 val_score=6.6792
+  ↑ новый лучший score 6.6792, сохранён best.pt
+  эпоха 6 шаг 50/250 loss=-12.0828 si_sdr=12.0828
+  эпоха 6 шаг 100/250 loss=-12.0472 si_sdr=12.0472
+  эпоха 6 шаг 150/250 loss=-11.8329 si_sdr=11.8329
+  эпоха 6 шаг 200/250 loss=-11.8480 si_sdr=11.8480
+  эпоха 6 шаг 250/250 loss=-11.8483 si_sdr=11.8483
+[эпоха 6/25] train_loss=-11.8483 train_si_sdr=11.8483 val_si_sdr=12.0565 val_si_sdr_mix=5.0023 val_si_sdri=7.0541 val_score=7.0541
+  ↑ новый лучший score 7.0541, сохранён best.pt
+  эпоха 7 шаг 50/250 loss=-12.3408 si_sdr=12.3408
+  эпоха 7 шаг 100/250 loss=-12.2242 si_sdr=12.2242
+  эпоха 7 шаг 150/250 loss=-12.3412 si_sdr=12.3412
+  эпоха 7 шаг 200/250 loss=-12.4563 si_sdr=12.4563
+  эпоха 7 шаг 250/250 loss=-12.4205 si_sdr=12.4205
+[эпоха 7/25] train_loss=-12.4205 train_si_sdr=12.4205 val_si_sdr=12.3966 val_si_sdr_mix=5.0023 val_si_sdri=7.3943 val_score=7.3943
+  ↑ новый лучший score 7.3943, сохранён best.pt
+  эпоха 8 шаг 50/250 loss=-12.8210 si_sdr=12.8210
+  эпоха 8 шаг 100/250 loss=-12.5761 si_sdr=12.5761
+  эпоха 8 шаг 150/250 loss=-12.4804 si_sdr=12.4804
+  эпоха 8 шаг 200/250 loss=-12.5969 si_sdr=12.5969
+  эпоха 8 шаг 250/250 loss=-12.6635 si_sdr=12.6635
+[эпоха 8/25] train_loss=-12.6635 train_si_sdr=12.6635 val_si_sdr=12.6993 val_si_sdr_mix=5.0023 val_si_sdri=7.6969 val_score=7.6969
+  ↑ новый лучший score 7.6969, сохранён best.pt
+  эпоха 9 шаг 50/250 loss=-12.9928 si_sdr=12.9928
+  эпоха 9 шаг 100/250 loss=-12.8021 si_sdr=12.8021
+  эпоха 9 шаг 150/250 loss=-12.8780 si_sdr=12.8780
+  эпоха 9 шаг 200/250 loss=-12.8889 si_sdr=12.8889
+  эпоха 9 шаг 250/250 loss=-12.9038 si_sdr=12.9038
+[эпоха 9/25] train_loss=-12.9038 train_si_sdr=12.9038 val_si_sdr=12.2770 val_si_sdr_mix=5.0023 val_si_sdri=7.2747 val_score=7.2747
+  эпоха 10 шаг 50/250 loss=-13.1201 si_sdr=13.1201
+  эпоха 10 шаг 100/250 loss=-13.0540 si_sdr=13.0540
+  эпоха 10 шаг 150/250 loss=-13.0288 si_sdr=13.0288
+  эпоха 10 шаг 200/250 loss=-12.9792 si_sdr=12.9792
+  эпоха 10 шаг 250/250 loss=-13.0558 si_sdr=13.0558
+[эпоха 10/25] train_loss=-13.0558 train_si_sdr=13.0558 val_si_sdr=12.7866 val_si_sdr_mix=5.0023 val_si_sdri=7.7843 val_score=7.7843
+  ↑ новый лучший score 7.7843, сохранён best.pt
+  эпоха 11 шаг 50/250 loss=-13.5424 si_sdr=13.5424
+  эпоха 11 шаг 100/250 loss=-13.1897 si_sdr=13.1897
+  эпоха 11 шаг 150/250 loss=-13.0724 si_sdr=13.0724
+  эпоха 11 шаг 200/250 loss=-13.1763 si_sdr=13.1763
+  эпоха 11 шаг 250/250 loss=-13.1983 si_sdr=13.1983
+[эпоха 11/25] train_loss=-13.1983 train_si_sdr=13.1983 val_si_sdr=13.5175 val_si_sdr_mix=5.0023 val_si_sdri=8.5152 val_score=8.5152
+  ↑ новый лучший score 8.5152, сохранён best.pt
+  эпоха 12 шаг 50/250 loss=-13.3911 si_sdr=13.3911
+  эпоха 12 шаг 100/250 loss=-13.2803 si_sdr=13.2803
+  эпоха 12 шаг 150/250 loss=-13.2440 si_sdr=13.2440
+  эпоха 12 шаг 200/250 loss=-13.2469 si_sdr=13.2469
+  эпоха 12 шаг 250/250 loss=-13.2054 si_sdr=13.2054
+[эпоха 12/25] train_loss=-13.2054 train_si_sdr=13.2054 val_si_sdr=13.1868 val_si_sdr_mix=5.0023 val_si_sdri=8.1844 val_score=8.1844
+  эпоха 13 шаг 50/250 loss=-13.4528 si_sdr=13.4528
+  эпоха 13 шаг 100/250 loss=-13.3408 si_sdr=13.3408
+  эпоха 13 шаг 150/250 loss=-13.3763 si_sdr=13.3763
+  эпоха 13 шаг 200/250 loss=-13.5439 si_sdr=13.5439
+  эпоха 13 шаг 250/250 loss=-13.5828 si_sdr=13.5828
+[эпоха 13/25] train_loss=-13.5828 train_si_sdr=13.5828 val_si_sdr=13.6531 val_si_sdr_mix=5.0023 val_si_sdri=8.6507 val_score=8.6507
+  ↑ новый лучший score 8.6507, сохранён best.pt
+  эпоха 14 шаг 50/250 loss=-13.3645 si_sdr=13.3645
+  эпоха 14 шаг 100/250 loss=-13.5489 si_sdr=13.5489
+  эпоха 14 шаг 150/250 loss=-13.5611 si_sdr=13.5611
+  эпоха 14 шаг 200/250 loss=-13.5260 si_sdr=13.5260
+  эпоха 14 шаг 250/250 loss=-13.5994 si_sdr=13.5994
+[эпоха 14/25] train_loss=-13.5994 train_si_sdr=13.5994 val_si_sdr=13.7978 val_si_sdr_mix=5.0023 val_si_sdri=8.7955 val_score=8.7955
+  ↑ новый лучший score 8.7955, сохранён best.pt
+  эпоха 15 шаг 50/250 loss=-13.7307 si_sdr=13.7307
+  эпоха 15 шаг 100/250 loss=-13.7506 si_sdr=13.7506
+  эпоха 15 шаг 150/250 loss=-13.8893 si_sdr=13.8893
+  эпоха 15 шаг 200/250 loss=-13.8795 si_sdr=13.8795
+  эпоха 15 шаг 250/250 loss=-13.9259 si_sdr=13.9259
+[эпоха 15/25] train_loss=-13.9259 train_si_sdr=13.9259 val_si_sdr=14.2023 val_si_sdr_mix=5.0023 val_si_sdri=9.1999 val_score=9.1999
+  ↑ новый лучший score 9.1999, сохранён best.pt
+  эпоха 16 шаг 50/250 loss=-14.2138 si_sdr=14.2138
+  эпоха 16 шаг 100/250 loss=-14.1947 si_sdr=14.1947
+  эпоха 16 шаг 150/250 loss=-14.1585 si_sdr=14.1585
+  эпоха 16 шаг 200/250 loss=-14.1153 si_sdr=14.1153
+  эпоха 16 шаг 250/250 loss=-14.1954 si_sdr=14.1954
+[эпоха 16/25] train_loss=-14.1954 train_si_sdr=14.1954 val_si_sdr=14.2458 val_si_sdr_mix=5.0023 val_si_sdri=9.2435 val_score=9.2435
+  ↑ новый лучший score 9.2435, сохранён best.pt
+  эпоха 17 шаг 50/250 loss=-14.2035 si_sdr=14.2035
+  эпоха 17 шаг 100/250 loss=-14.1122 si_sdr=14.1122
+  эпоха 17 шаг 150/250 loss=-14.1710 si_sdr=14.1710
+  эпоха 17 шаг 200/250 loss=-14.2177 si_sdr=14.2177
+  эпоха 17 шаг 250/250 loss=-14.1567 si_sdr=14.1567
+[эпоха 17/25] train_loss=-14.1567 train_si_sdr=14.1567 val_si_sdr=14.3055 val_si_sdr_mix=5.0023 val_si_sdri=9.3031 val_score=9.3031
+  ↑ новый лучший score 9.3031, сохранён best.pt
+  эпоха 18 шаг 50/250 loss=-14.3160 si_sdr=14.3160
+  эпоха 18 шаг 100/250 loss=-13.9881 si_sdr=13.9881
+  эпоха 18 шаг 150/250 loss=-14.2076 si_sdr=14.2076
+  эпоха 18 шаг 200/250 loss=-14.1582 si_sdr=14.1582
+  эпоха 18 шаг 250/250 loss=-14.2454 si_sdr=14.2454
+[эпоха 18/25] train_loss=-14.2454 train_si_sdr=14.2454 val_si_sdr=14.3155 val_si_sdr_mix=5.0023 val_si_sdri=9.3131 val_score=9.3131
+  ↑ новый лучший score 9.3131, сохранён best.pt
+  эпоха 19 шаг 50/250 loss=-14.3367 si_sdr=14.3367
+  эпоха 19 шаг 100/250 loss=-14.4945 si_sdr=14.4945
+  эпоха 19 шаг 150/250 loss=-14.4964 si_sdr=14.4964
+  эпоха 19 шаг 200/250 loss=-14.4980 si_sdr=14.4980
+  эпоха 19 шаг 250/250 loss=-14.4686 si_sdr=14.4686
+[эпоха 19/25] train_loss=-14.4686 train_si_sdr=14.4686 val_si_sdr=14.4781 val_si_sdr_mix=5.0023 val_si_sdri=9.4757 val_score=9.4757
+  ↑ новый лучший score 9.4757, сохранён best.pt
+  эпоха 20 шаг 50/250 loss=-14.7871 si_sdr=14.7871
+  эпоха 20 шаг 100/250 loss=-14.4451 si_sdr=14.4451
+  эпоха 20 шаг 150/250 loss=-14.3650 si_sdr=14.3650
+  эпоха 20 шаг 200/250 loss=-14.3788 si_sdr=14.3788
+  эпоха 20 шаг 250/250 loss=-14.4317 si_sdr=14.4317
+[эпоха 20/25] train_loss=-14.4317 train_si_sdr=14.4317 val_si_sdr=14.5785 val_si_sdr_mix=5.0023 val_si_sdri=9.5761 val_score=9.5761
+  ↑ новый лучший score 9.5761, сохранён best.pt
+  эпоха 21 шаг 50/250 loss=-14.7019 si_sdr=14.7019
+  эпоха 21 шаг 100/250 loss=-14.2260 si_sdr=14.2260
+  эпоха 21 шаг 150/250 loss=-14.3155 si_sdr=14.3155
+  эпоха 21 шаг 200/250 loss=-14.3831 si_sdr=14.3831
+  эпоха 21 шаг 250/250 loss=-14.3494 si_sdr=14.3494
+[эпоха 21/25] train_loss=-14.3494 train_si_sdr=14.3494 val_si_sdr=14.5766 val_si_sdr_mix=5.0023 val_si_sdri=9.5742 val_score=9.5742
+  эпоха 22 шаг 50/250 loss=-14.6058 si_sdr=14.6058
+  эпоха 22 шаг 100/250 loss=-14.5365 si_sdr=14.5365
+  эпоха 22 шаг 150/250 loss=-14.5326 si_sdr=14.5326
+  эпоха 22 шаг 200/250 loss=-14.5234 si_sdr=14.5234
+  эпоха 22 шаг 250/250 loss=-14.5099 si_sdr=14.5099
+[эпоха 22/25] train_loss=-14.5099 train_si_sdr=14.5099 val_si_sdr=14.6327 val_si_sdr_mix=5.0023 val_si_sdri=9.6303 val_score=9.6303
+  ↑ новый лучший score 9.6303, сохранён best.pt
+  эпоха 23 шаг 50/250 loss=-15.0741 si_sdr=15.0741
+  эпоха 23 шаг 100/250 loss=-14.8466 si_sdr=14.8466
+  эпоха 23 шаг 150/250 loss=-14.7910 si_sdr=14.7910
+  эпоха 23 шаг 200/250 loss=-14.7684 si_sdr=14.7684
+  эпоха 23 шаг 250/250 loss=-14.7142 si_sdr=14.7142
+[эпоха 23/25] train_loss=-14.7142 train_si_sdr=14.7142 val_si_sdr=14.6742 val_si_sdr_mix=5.0023 val_si_sdri=9.6718 val_score=9.6718
+  ↑ новый лучший score 9.6718, сохранён best.pt
+  эпоха 24 шаг 50/250 loss=-14.5715 si_sdr=14.5715
+  эпоха 24 шаг 100/250 loss=-14.5795 si_sdr=14.5795
+  эпоха 24 шаг 150/250 loss=-14.5614 si_sdr=14.5614
+  эпоха 24 шаг 200/250 loss=-14.5585 si_sdr=14.5585
+  эпоха 24 шаг 250/250 loss=-14.5316 si_sdr=14.5316
+[эпоха 24/25] train_loss=-14.5316 train_si_sdr=14.5316 val_si_sdr=14.6472 val_si_sdr_mix=5.0023 val_si_sdri=9.6448 val_score=9.6448
+  эпоха 25 шаг 50/250 loss=-14.9045 si_sdr=14.9045
+  эпоха 25 шаг 100/250 loss=-14.9139 si_sdr=14.9139
+  эпоха 25 шаг 150/250 loss=-14.8164 si_sdr=14.8164
+  эпоха 25 шаг 200/250 loss=-14.7380 si_sdr=14.7380
+  эпоха 25 шаг 250/250 loss=-14.6986 si_sdr=14.6986
+[эпоха 25/25] train_loss=-14.6986 train_si_sdr=14.6986 val_si_sdr=14.6269 val_si_sdr_mix=5.0023 val_si_sdri=9.6246 val_score=9.6246
+[train] готово: {'best_score': 9.671808242797852, 'out_dir': '/kaggle/working/runs/sep_unet_sisdr'}
+  50/150
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/kaggle/working/caa/callaudio/evaluate.py", line 324, in <module>
+    main()
+    ~~~~^^
+  File "/kaggle/working/caa/callaudio/evaluate.py", line 320, in main
+    {"separation": evaluate_separation, "emotion": evaluate_emotion, "vae": evaluate_vae}[a.task](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/kaggle/working/caa/callaudio/evaluate.py", line 96, in evaluate_separation
+    item = ds[i]
+           ~~^^^
+  File "/kaggle/working/caa/callaudio/data/datasets.py", line 94, in __getitem__
+    mix, _ = mix_at_snr(speech, noise, snr)
+             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/working/caa/callaudio/audio.py", line 93, in mix_at_snr
+    return speech + noise, noise
+           ~~~~~~~^~~~~~~
+ValueError: operands could not be broadcast together with shapes (64320,) (64319,) 
+ГОТОВО
